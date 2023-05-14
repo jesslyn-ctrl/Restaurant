@@ -1,0 +1,13 @@
+root = "."
+tmp_dir = "tmp"
+build_dir = "tmp"
+app_port = 14045
+
+[build]
+  bin = "tmp/main"
+  exclude_dirs = ["tmp"]
+
+[[watcher]]
+  paths = ["."]
+  include_ext = ["go"]
+  exclude_dir = ["tmp/*"]
